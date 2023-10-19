@@ -1,1 +1,60 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background: rgb(0, 128, 96);
+}
+.card-container {
+  text-align: left; /* Alinea el contenido a la izquierda */
+  margin-top: 20px;
+}
+
+.card-container h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Alinea las cartas a la izquierda */
+}
+
+.card-list li {
+  font-size: 18px;
+  margin: 5px;
+  width: 100px;
+  height: 150px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-list li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f08d";
+  font-size: 24px;
+}
+
+.card-list li.corazon::before {
+  content: "\f08d";
+}
+
+.card-list li.diamante::before {
+  content: "\f219";
+}
+
+.card-list li.pica::before {
+  content: "\f0d0";
+}
+
+.card-list li.trebol::before {
+  content: "\f0c8";
+}
